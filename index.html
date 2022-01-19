@@ -1,11 +1,3 @@
-<?php
-include 'Mobile_Detect.php';
-$detect = new Mobile_Detect();
-
-if ($detect->isMobile()) {
-    header('Location: mobile/memberpage-mobile');  
-}
-?>
 <html>
 <head>
 <title>Adam's Website</title>
@@ -22,15 +14,7 @@ if ($detect->isMobile()) {
 <link rel="prefetch" href="/images/projects/finis.png">
 <link rel="prefetch" href="/images/projects/etc.png">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131291178-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-131291178-1');
-</script>
 <style>
 body {
   margin: 0;
