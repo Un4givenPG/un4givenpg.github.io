@@ -1,0 +1,11 @@
+body {
+  font: 100% "Segoe UI Light", Ubuntu, "Helvetica Neue Ultralight", "Calibri Light";
+  color: white;
+}
+
+bg {
+  background-image: url("/img/bg.webp");
+  -webkit-filter: blur 1.5px;
+          filter: blur 1.5px;
+}
+/*# sourceMappingURL=styles.css.map */
