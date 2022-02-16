@@ -4,11 +4,13 @@
 <link rel="stylesheet" href="../styles/styles.css">
 <link rel="stylesheet" href="../styles/blink.css">
 <link rel="stylesheet" href="../styles/scroll.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</script>
 <script>
-  Splitting();
-ScrollOut({
-  targets: '.word',
-  scrollingElement: '.container'
+$(document).ready(function(){
+    $(window).scroll(function(){
+        $("#scroller").css("opacity", 1 - $(window).scrollTop());
+    });
 });
 </script>
 </head>
@@ -21,14 +23,14 @@ ScrollOut({
       <div class="sign">
         <span class="fast-flicker">Adam</span>&nbsp;<span class="flicker">Adam</span>czyk
       </div>
-      <div class="github">Github Portfolio</div>
-      
-        <a href="#p2"> <div class="scroll-down"></div></a>
+      <div class="github">Github Portfolio</div></div></div>
+      <div class="scroll-cta">
+        <a href="#p2"> <div class="scroll-down" id="scroller"></div></a>
+        </div>
     
 
-</label>
-</div> 
-</div>
+
+
 <div class="page" id="p2">
   
 </div>
