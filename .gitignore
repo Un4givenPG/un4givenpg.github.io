@@ -5,7 +5,7 @@
 #OLD CSS# 
 oldcss.css
 ### PNG ###
-*.png
+#*.png
 
 # JPEG #
 *.jpg
