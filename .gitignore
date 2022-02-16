@@ -1,0 +1,17 @@
+### Sass ###
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+#OLD CSS# 
+oldcss.css
+### PNG ###
+*.png
+
+# JPEG #
+*.jpg
+*.jpeg
+*.jpe
+*.jif
+*.jfif
+*.jfi

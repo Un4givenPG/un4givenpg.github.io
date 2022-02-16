@@ -1,0 +1,15 @@
+//vars
+$font-stack: "Segoe UI Light", Ubuntu, "Helvetica Neue Ultralight", "Calibri Light";
+$primary-color: rgb(255, 255, 255);
+$logo-image: "/img/logo.webp";
+$background-image: "/img/bg.png";
+
+//works
+body {
+    font: 100% $font-stack;
+    color: $primary-color;
+}
+bg {
+  background-image: url($background-image);
+  filter: blur 1.5px;
+}
