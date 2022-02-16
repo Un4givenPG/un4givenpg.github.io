@@ -3,32 +3,35 @@
 <title>Adam's Website</title>
 <link rel="stylesheet" href="../styles/styles.css">
 <link rel="stylesheet" href="../styles/blink.css">
+<link rel="stylesheet" href="../styles/scroll.css">
+<script>
+  Splitting();
+ScrollOut({
+  targets: '.word',
+  scrollingElement: '.container'
+});
+</script>
+</head>
+<body>
 
-
-
-<body scroll="no">
-  <div class="welcome">
-    <div class="img"></div>
-  <div class="sign">
-    <span class="fast-flicker">Adam</span>&nbsp;<span class="flicker">Adam</span>czyk
-  </div>
-    <h3>Github Portfolio</h3>
-   <input type='checkbox' id='mmeennuu'>
-<label class='menu' for='mmeennuu'>
-
-<div class='barry'>
-    Start
-</div>
+<div class="container">
+  <div class="page" id="p1">
+      <div class="welcome">
+        <div class="img"></div>
+      <div class="sign">
+        <span class="fast-flicker">Adam</span>&nbsp;<span class="flicker">Adam</span>czyk
+      </div>
+      <div class="github">Github Portfolio</div>
+      
+        <a href="#p2"> <div class="scroll-down"></div></a>
     
-<ul>
-    <li><a id='home' class="off">Home</a></li>
-    <li><a id='about' href="/projekty">Projekty</a></li>
-    <li><a id='contact' href="https://panel.home.pl/">Panel</a></li>
-    <li><a id='link' href='logout'>Wyloguj</a></li>
-</ul>
 
 </label>
-
+</div> 
+</div>
+<div class="page" id="p2">
+  
+</div>
 
 
 </body>

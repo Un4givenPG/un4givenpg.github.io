@@ -1,21 +1,33 @@
-//font var
-$font-stack: "Segoe UI Light", Ubuntu, "Helvetica Neue Ultralight", "Calibri Light";
-//color-vars
-$primary-color: rgb(255, 255, 255);
-$secondary-color: #f44336;
-$active-color: yellow;
-$bg-color: black;
-//image-vars
-$logo-image: "../img/logo.webp";
-$background-image: "../img/bg.webp";
+@import "../utils/vars.scss"
 
 //works
+html {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
 body {
     font: 100% $font-stack;
     color: $primary-color;
     background-image: url($background-image);
     background-size: cover;
+    background-position: center;
     backdrop-filter: blur(1.5px);
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+  }
+a{
+  font: 100% $font-stack;
+  color: $primary-color;
+  text-decoration: none;
+}
+.github {
+  font-size: 30px;
+  display: flex;
+  height: 6vh;
+  font-weight: 600;
 }
 .img{
   display: flex;
@@ -38,27 +50,14 @@ body {
   width: 80%;
   height: 80%;
 }
-#mmeennuu {
-  display: none;
-}
-#mmeennuu:checked ~ .menu {
-  width: 500px;
-  border-radius: 5px;
-  background-color: transparent;
-  height: 85px;
-}
-#mmeennuu:checked ~ .menu > ul {
-  display: block;
-  opacity: 1;
-}
-#mmeennuu:checked ~ .menu > .barry {
-  display: none;
-}
 .menu {
-  display: block;
-  margin: 30px auto;
-  width: 80px;
-  height: 80px;
+  z-index: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: calc(100vh/14);
+  height: calc(100vh/14);
   background-color: #f44336;
   border: 3px solid transparent;
   border-radius: 50%;
@@ -68,7 +67,8 @@ body {
 }
 .menu div.barry {
   font-size: 25px;
-  margin: 20px auto;
+  display: flex;
+  align-items: center;
 }
 .menu div.barry .bar {
   display: block;
@@ -77,38 +77,4 @@ body {
   margin-top: 3px;
   border-radius: 2px;
   background-color: #fff;
-}
-.menu ul {
-  opacity: 0;
-  display: none;
-  transition: all 0.5s ease-in-out;
-  list-style-type: none;
-  padding: 0;
-  width: 500px;
-  text-align: center;
-  margin-bottom: 0;
-}
-.menu ul li {
-  display: inline-block;
-}
-.menu ul li a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 15px 25px;
-  color: $secondary-color;
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
-  border-radius: 5px;
-}
-.menu ul li a:hover {
-  border-color: $secondary-color;
-}
-.menu ul li a:target {
-  border-bottom-color: $secondary-color;
-}
-.off {
-  pointer-events: none;
-  cursor: default;
-  text-decoration: none;
-  color: $active-color ;
 }

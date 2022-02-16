@@ -1,10 +1,36 @@
+html {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
 body {
   font: 100% "Segoe UI Light", Ubuntu, "Helvetica Neue Ultralight", "Calibri Light";
   color: white;
   background-image: url("../img/bg.webp");
   background-size: cover;
+  background-position: center;
   -webkit-backdrop-filter: blur(1.5px);
           backdrop-filter: blur(1.5px);
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+}
+
+a {
+  font: 100% "Segoe UI Light", Ubuntu, "Helvetica Neue Ultralight", "Calibri Light";
+  color: white;
+  text-decoration: none;
+}
+
+.github {
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 6vh;
+  font-weight: 600;
 }
 
 .img {
@@ -40,31 +66,21 @@ body {
   height: 80%;
 }
 
-#mmeennuu {
-  display: none;
-}
-
-#mmeennuu:checked ~ .menu {
-  width: 500px;
-  border-radius: 5px;
-  background-color: transparent;
-  height: 85px;
-}
-
-#mmeennuu:checked ~ .menu > ul {
-  display: block;
-  opacity: 1;
-}
-
-#mmeennuu:checked ~ .menu > .barry {
-  display: none;
-}
-
 .menu {
-  display: block;
-  margin: 30px auto;
-  width: 80px;
-  height: 80px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100vh/14);
+  height: calc(100vh/14);
   background-color: #f44336;
   border: 3px solid transparent;
   border-radius: 50%;
@@ -76,7 +92,12 @@ body {
 
 .menu div.barry {
   font-size: 25px;
-  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu div.barry .bar {
@@ -86,47 +107,5 @@ body {
   margin-top: 3px;
   border-radius: 2px;
   background-color: #fff;
-}
-
-.menu ul {
-  opacity: 0;
-  display: none;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  list-style-type: none;
-  padding: 0;
-  width: 500px;
-  text-align: center;
-  margin-bottom: 0;
-}
-
-.menu ul li {
-  display: inline-block;
-}
-
-.menu ul li a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 15px 25px;
-  color: #f44336;
-  font-size: 20px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  border-radius: 5px;
-}
-
-.menu ul li a:hover {
-  border-color: #f44336;
-}
-
-.menu ul li a:target {
-  border-bottom-color: #f44336;
-}
-
-.off {
-  pointer-events: none;
-  cursor: default;
-  text-decoration: none;
-  color: yellow;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -19,9 +19,9 @@
   top: 60%;
   font-family: "Segoe UI Light";
   text-transform: uppercase;
-  font-size: 6em;
+  font-size: 7rem;
   color: #f44336;
-  text-shadow: 0 0 0.6rem #eec3c3, 0 0 1.5rem #f44336, -0.2rem 0.1rem 1rem #f44336, 0.2rem 0.1rem 1rem #f44336, 0 -0.5rem 2rem #f44336, 0 0.5rem 3rem #f44336;
+  text-shadow: 0 0 0.6rem #f7ecec, 0 0 1.5rem #f44336, -0.2rem 0.1rem 1rem #f44336, 0.2rem 0.1rem 1rem #f44336, 0 -0.5rem 2rem #f44336, 0 0.5rem 3rem #f44336;
   -webkit-animation: shine 2s forwards, flicker 3s infinite;
           animation: shine 2s forwards, flicker 3s infinite;
 }
@@ -31,8 +31,8 @@
   22%,
   36%,
   75% {
-    color: #eec3c3;
-    text-shadow: 0 0 0.6rem #eec3c3, 0 0 1.5rem #f44336, -0.2rem 0.1rem 1rem #f44336, 0.2rem 0.1rem 1rem #f44336, 0 -0.5rem 2rem #f44336, 0 0.5rem 3rem #f44336;
+    color: #f7ecec;
+    text-shadow: 0 0 0.6rem #f7ecec, 0 0 1.5rem #f44336, -0.2rem 0.1rem 1rem #f44336, 0.2rem 0.1rem 1rem #f44336, 0 -0.5rem 2rem #f44336, 0 0.5rem 3rem #f44336;
   }
   28%,
   33% {
@@ -51,8 +51,8 @@
   22%,
   36%,
   75% {
-    color: #eec3c3;
-    text-shadow: 0 0 0.6rem #eec3c3, 0 0 1.5rem #f44336, -0.2rem 0.1rem 1rem #f44336, 0.2rem 0.1rem 1rem #f44336, 0 -0.5rem 2rem #f44336, 0 0.5rem 3rem #f44336;
+    color: #f7ecec;
+    text-shadow: 0 0 0.6rem #f7ecec, 0 0 1.5rem #f44336, -0.2rem 0.1rem 1rem #f44336, 0.2rem 0.1rem 1rem #f44336, 0 -0.5rem 2rem #f44336, 0 0.5rem 3rem #f44336;
   }
   28%,
   33% {
@@ -82,8 +82,8 @@
     text-shadow: none;
   }
   100% {
-    color: #eec3c3;
-    text-shadow: 0 0 0.6rem #eec3c3, 0 0 1.5rem #f44336, -0.2rem 0.1rem 1rem #f44336, 0.2rem 0.1rem 1rem #f44336, 0 -0.5rem 2rem #f44336, 0 0.5rem 3rem #f44336;
+    color: #f7ecec;
+    text-shadow: 0 0 0.6rem #f7ecec, 0 0 1.5rem #f44336, -0.2rem 0.1rem 1rem #f44336, 0.2rem 0.1rem 1rem #f44336, 0 -0.5rem 2rem #f44336, 0 0.5rem 3rem #f44336;
   }
 }
 
@@ -93,8 +93,8 @@
     text-shadow: none;
   }
   100% {
-    color: #eec3c3;
-    text-shadow: 0 0 0.6rem #eec3c3, 0 0 1.5rem #f44336, -0.2rem 0.1rem 1rem #f44336, 0.2rem 0.1rem 1rem #f44336, 0 -0.5rem 2rem #f44336, 0 0.5rem 3rem #f44336;
+    color: #f7ecec;
+    text-shadow: 0 0 0.6rem #f7ecec, 0 0 1.5rem #f44336, -0.2rem 0.1rem 1rem #f44336, 0.2rem 0.1rem 1rem #f44336, 0 -0.5rem 2rem #f44336, 0 0.5rem 3rem #f44336;
   }
 }
 
