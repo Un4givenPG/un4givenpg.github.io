@@ -1,11 +1,132 @@
 body {
   font: 100% "Segoe UI Light", Ubuntu, "Helvetica Neue Ultralight", "Calibri Light";
   color: white;
+  background-image: url("../img/bg.webp");
+  background-size: cover;
+  -webkit-backdrop-filter: blur(1.5px);
+          backdrop-filter: blur(1.5px);
 }
 
-bg {
-  background-image: url("/img/bg.png");
-  -webkit-filter: blur 1.5px;
-          filter: blur 1.5px;
+.img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("../img/logo.webp");
+  width: 70%;
+  height: 70%;
+  background-position: center;
+  background-size: cover;
+}
+
+.welcome {
+  text-align: center;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  height: 80%;
+}
+
+#mmeennuu {
+  display: none;
+}
+
+#mmeennuu:checked ~ .menu {
+  width: 500px;
+  border-radius: 5px;
+  background-color: transparent;
+  height: 85px;
+}
+
+#mmeennuu:checked ~ .menu > ul {
+  display: block;
+  opacity: 1;
+}
+
+#mmeennuu:checked ~ .menu > .barry {
+  display: none;
+}
+
+.menu {
+  display: block;
+  margin: 30px auto;
+  width: 80px;
+  height: 80px;
+  background-color: #f44336;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu div.barry {
+  font-size: 25px;
+  margin: 20px auto;
+}
+
+.menu div.barry .bar {
+  display: block;
+  width: 100%;
+  height: 5px;
+  margin-top: 3px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.menu ul {
+  opacity: 0;
+  display: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  list-style-type: none;
+  padding: 0;
+  width: 500px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 25px;
+  color: #f44336;
+  font-size: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.menu ul li a:hover {
+  border-color: #f44336;
+}
+
+.menu ul li a:target {
+  border-bottom-color: #f44336;
+}
+
+.off {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: yellow;
 }
 /*# sourceMappingURL=styles.css.map */
