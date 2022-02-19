@@ -1,5 +1,4 @@
 @use "../scss/vars" as v;
-
 //works
 html {
   margin: 0;
@@ -10,7 +9,8 @@ html {
 body {
     color: v.$primary-color;
     background-image: url(v.$background-image);
-    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+            backdrop-filter: blur(1.5px);
     overflow: hidden;
     height: 100%;
     margin: 0;
@@ -44,48 +44,7 @@ a{
   @include v.flex;
 }
 //cards
-.card {
-  -ms-flex-preferred-size: var(--size-content-1);
-      flex-basis: var(--size-content-1);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  grid-gap: var(--size-2);
-  gap: var(--size-2);
-  background: var(--surface-3);
-  border: 1px solid var(--surface-1);
-  padding: var(--size-4);
-  border-radius: var(--radius-3);
-  -webkit-box-shadow: var(--shadow-2);
-          box-shadow: var(--shadow-2);
-}
-
-.card > h5 {
-  line-height: var(--font-lineheight-1);
-}
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  max-width: calc(var(--size-content-1) * 4);
-  grid-gap: var(--size-5);
-  gap: var(--size-5);
-  padding: var(--size-5);
-}
-#p1{
+.p1{
   background-color: #141114;
   background-image: linear-gradient(335deg, black 23px, transparent 23px),
     linear-gradient(155deg, black 23px, transparent 23px),
@@ -95,4 +54,16 @@ main {
   background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
   background-repeat: repeat;
   left: -1%;
+}
+.p2{
+  background: conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700);
+}
+.p3{
+  background: conic-gradient(from 90deg at 50% 125%, #1f005c, #003298, #005ac6, #007fdc, #00a2d3, #00c4ae, #00e474, #00ff00, #1f005c, #003298, #005ac6, #007fdc, #00a2d3, #00c4ae, #00e474, #00ff00);
+}
+.p4{
+  background: conic-gradient(from 90deg at 25% -10%, #ff4500, #d3f340, #7bee85, #afeeee, #7bee85);
+}
+.p5{
+  background:conic-gradient(from .5turn at 50% 110%, white, orange);
 }

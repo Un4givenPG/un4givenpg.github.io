@@ -1,12 +1,15 @@
-@use "../scss/vars";
+@use "sass:math";
+
+@use "../scss/vars" as v;
 
  #wrapper {
   text-align: center;
 }
 
 .sub {
-  color: vars.$secondary-color;
+  color: v.$secondary-color;
   letter-spacing: 1em;
+  text-transform: uppercase
 }
 
 @mixin glitchCopy {
@@ -20,12 +23,16 @@
 #bottom-gl{
   bottom: 20%
 }
-%upper-gl{
-
+//napis
+.glitch-off{
+  position: relative;
+  color: v.$primary-color;
+  font-size: 4em;
+  letter-spacing: 0.3em;
 }
 .glitch {
   position: relative;
-  color: vars.$primary-color;
+  color: v.$primary-color;
   font-size: 4em;
   letter-spacing: 0.3em;
   animation: glitch-skew 1s infinite linear alternate-reverse;
@@ -47,12 +54,32 @@
   }
 }
 
+@-webkit-keyframes glitch-anim {
+  $steps: 20;
+  @for $i from 0 to $steps {
+    #{percentage($i*math.div(1, $steps))} {
+      clip: rect(random(100) + px, 9999px, random(100) + px, 0);
+      transform: skew((random(100) * 0.01) + deg);
+    }
+  }
+}
+
 @keyframes glitch-anim {
   $steps: 20;
   @for $i from 0 to $steps {
-    #{percentage($i*(1/$steps))} {
+    #{percentage($i*math.div(1, $steps))} {
       clip: rect(random(100) + px, 9999px, random(100) + px, 0);
-      transform: skew((random(100) / 100) + deg);
+      transform: skew((random(100) * 0.01) + deg);
+    }
+  }
+}
+
+@-webkit-keyframes glitch-anim2 {
+  $steps: 20;
+  @for $i from 0 to $steps {
+    #{percentage($i*math.div(1, $steps))} {
+      clip: rect(random(100) + px, 9999px, random(100) + px, 0);
+      transform: skew((random(100) * 0.01) + deg);
     }
   }
 }
@@ -60,9 +87,18 @@
 @keyframes glitch-anim2 {
   $steps: 20;
   @for $i from 0 to $steps {
-    #{percentage($i*(1/$steps))} {
+    #{percentage($i*math.div(1, $steps))} {
       clip: rect(random(100) + px, 9999px, random(100) + px, 0);
-      transform: skew((random(100) / 100) + deg);
+      transform: skew((random(100) * 0.01) + deg);
+    }
+  }
+}
+
+@-webkit-keyframes glitch-skew {
+  $steps: 10;
+  @for $i from 0 to $steps {
+    #{percentage($i*math.div(1, $steps))} {
+      transform: skew((random(10) - 5) + deg);
     }
   }
 }
@@ -70,7 +106,7 @@
 @keyframes glitch-skew {
   $steps: 10;
   @for $i from 0 to $steps {
-    #{percentage($i*(1/$steps))} {
+    #{percentage($i*math.div(1, $steps))} {
       transform: skew((random(10) - 5) + deg);
     }
   }

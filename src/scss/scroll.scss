@@ -1,4 +1,4 @@
-@use "../scss/vars";
+@use "../scss/vars" as v;
 .page {
 	height: 100vh;
 	width: 100vw;
@@ -10,25 +10,29 @@
 	justify-content: center;
 	position: relative;
 	text-align: center;
+  left: -1%;
 	.char {
 		display: inline-block;
-		animation-delay: 0.25s;
+		-webkit-animation-delay: 0.25s;
+		        animation-delay: 0.25s;
 		transition: all 0.25s 0.25s
 	}
 }
-.container {
+.przewijak {
 	height: 100vh;
+  width: 100vw;
 	overflow: auto;
 	overflow-x: hidden;
-	scroll-snap-type: y mandatory;
+	    -ms-scroll-snap-type: y mandatory;
+	        scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
 .scroll-down {
     height: 50px;
     width: 30px;
-    border: 2px solid vars.$primary-color;
+    border: 2px solid v.$primary-color;
     position: absolute;
-    left: 50%;
+    left: 49%;
     bottom: 20px;
     border-radius: 50px;
     cursor: pointer;
@@ -42,18 +46,33 @@
     height: 10px;
     width: 10px;
     transform: translate(-50%, -100%) rotate(45deg);
-    border: 2px solid vars.$primary-color;
+    border: 2px solid v.$primary-color;
     border-top: transparent;
     border-left: transparent;
-    animation: scroll-down 1s ease-in-out infinite;
+    -webkit-animation: scroll-down 1s ease-in-out infinite;
+            animation: scroll-down 1s ease-in-out infinite;
   }
   .scroll-down::before {
     top: 30%;
-    animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
     
   }
-  .scroll-cta{
-    position: relative;
+  @-webkit-keyframes scroll-down {
+    0% {
+      
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      top: 90%;
+      opacity: 0;
+    }
   }
   @keyframes scroll-down {
     0% {
@@ -71,3 +90,4 @@
       opacity: 0;
     }
   }
+  
