@@ -5,7 +5,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "dev": "parcel src/index.html --dist-dir dev",
-    "build": "parcel build src/index.html --dist-dir dist"
+    "build": "parcel build src/index.html --dist-dir docs"
   },
   "repository": {
     "type": "git",
