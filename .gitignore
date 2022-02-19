@@ -14,3 +14,7 @@ oldcss.css
 *.jif
 *.jfif
 *.jfi
+node_modules
+.parcel-cache
+dev
+src
