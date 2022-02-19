@@ -1,4 +1,4 @@
-@import "../scss/vars";
+@use "../scss/vars";
 @mixin center-cover {
   background-position: center;
   background-size: cover;
@@ -16,8 +16,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-    color: $primary-color;
-    background-image: url($background-image);
+    color: vars.$primary-color;
+    background-image: url(vars.$background-image);
     backdrop-filter: blur(1.5px);
     overflow: hidden;
     height: 100%;
@@ -25,13 +25,13 @@ body {
     @include center-cover;
   }
 a{
-  font: 100% $font-stack;
-  color: $primary-color;
+  font: 100% vars.$font-stack;
+  color: vars.$primary-color;
   text-decoration: none;
 }
 .img{
   display: flex;
-  background-image: url($logo-image);
+  background-image: url(vars.$logo-image);
   width: 70%;
   height: 70%;
   @include center-cover;
@@ -43,7 +43,7 @@ a{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: $primary-color;
+  color: vars.$primary-color;
   width: 80%;
   height: 80%;
   @include flex-collum-no-wrp;
