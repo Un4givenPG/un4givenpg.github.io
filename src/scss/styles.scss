@@ -1,13 +1,5 @@
-@use "../scss/vars";
-@mixin center-cover {
-  background-position: center;
-  background-size: cover;
-}
-@mixin flex-collum-no-wrp {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-}
+@use "../scss/vars" as v;
+
 //works
 html {
   margin: 0;
@@ -16,25 +8,25 @@ html {
   scroll-behavior: smooth;
 }
 body {
-    color: vars.$primary-color;
-    background-image: url(vars.$background-image);
+    color: v.$primary-color;
+    background-image: url(v.$background-image);
     backdrop-filter: blur(1.5px);
     overflow: hidden;
     height: 100%;
     margin: 0;
-    @include center-cover;
+    @include v.center;
   }
 a{
-  font: 100% vars.$font-stack;
-  color: vars.$primary-color;
+  font: 100% v.$font-stack;
+  color: v.$primary-color;
   text-decoration: none;
 }
 .img{
   display: flex;
-  background-image: url(vars.$logo-image);
+  background-image: url(v.$logo-image);
   width: 70%;
   height: 70%;
-  @include center-cover;
+  @include v.center;
 }
 .welcome {
   text-align: center;
@@ -43,13 +35,13 @@ a{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: vars.$primary-color;
+  color: v.$primary-color;
   width: 80%;
   height: 80%;
-  @include flex-collum-no-wrp;
+  @include v.flex;
 }
 .sign {
-  @include flex-collum-no-wrp;
+  @include v.flex;
 }
 //cards
 .card {

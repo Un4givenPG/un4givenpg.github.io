@@ -11,3 +11,13 @@ $bg-color: black;
 //image-vars
 $logo-image: "../img/logo.webp";
 $background-image: "../img/bg.webp";
+//mixins
+@mixin center {
+    background-position: center;
+    background-size: cover;
+  }
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
