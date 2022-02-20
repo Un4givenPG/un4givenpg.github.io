@@ -11,5 +11,5 @@ function deglitcher() {
         glitch2.classList.add('glitch-off');
         glitch2.classList.remove('glitch'); 
         console.log('Trele Morele');
-    }, 5000);
+    }, 3000);
 }
