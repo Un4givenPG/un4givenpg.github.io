@@ -1,13 +1,15 @@
 @use "../scss/vars" as v;
+@use "sass:color" as c;
 //works
 html {
-  font-family: 100% Roboto, sans-serif;
+  font-family: Roboto, sans-serif;
   margin: 0;
   height: 100%;
   overflow: hidden;
-  scroll-behavior: smooth;
+  //scroll-behavior: smooth;
 }
 body {
+  font-family: Roboto, sans-serif;
     color: v.$primary-color;
     background-image: url(v.$background-image);
     -webkit-backdrop-filter: blur(1.5px);
@@ -57,13 +59,66 @@ a{
 }
 .p2{
   background: conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700);
-}
+  .card-text {
+    font-size: 0.9em;
+  }
+  .card{
+    width: 36rem;
+  }
+    @media screen and (max-height: 2000px) {
+      .card{
+        width: 26rem;
+    }
+    .card-text{
+        font-size: 0.6em;
+    }
+    
+  }
+  .btn-primary{
+    background-color: v.$secondary-color;
+    border-color: v.$secondary-color;
+    color: v.$primary-color;
+  }
+  //.btn-primary:hover{
+    //background-color: v.$secondary-color;
+   // border-color: v.$secondary-color;
+   // color: c.scale(v.$primary-color, $green: 15% ) ;
+ // }
+ }
+
 .p3{
-  background: conic-gradient(from 90deg at 50% 125%, #1f005c, #003298, #005ac6, #007fdc, #00a2d3, #00c4ae, #00e474, #00ff00, #1f005c, #003298, #005ac6, #007fdc, #00a2d3, #00c4ae, #00e474, #00ff00);
+  background: conic-gradient(from -90deg at -10% center, #ffa500, #ff7715, #ff522a, #ff3f47, #ff5482, #ff69b4);
+  .btn-primary{
+    background-color: v.$secondary-color;
+    border-color: v.$secondary-color;
+    color: v.$primary-color;
+  }
+  .card{
+    width: 36rem;
+  }
+    @media screen and (max-height: 2000px) {
+      .card{
+        width: 26rem;
+    }
+    .card-text{
+        font-size: 0.6em;
+    }
+  }
+  @media screen and (max-height: 950px) {
+    .card{
+      width: 22rem;
+  }
+  .card-text{
+      font-size: 0.6em;
+   }
+   .card-img-top{
+     display: none;
+   }
+  } 
 }
 .p4{
-  background: conic-gradient(from 90deg at 25% -10%, #ff4500, #d3f340, #7bee85, #afeeee, #7bee85);
+  background: conic-gradient(from 90deg at 25% -10%, #ff4500, #d3f340, #7bee85, #afeeee, #7bee85)
 }
 .p5{
-  background:conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700)
-}
+  background:conic-gradient(at 125% 50%, #b78cf7, #ff7c94, #ffcf0d, #ff7c94, #b78cf7)
+} 
