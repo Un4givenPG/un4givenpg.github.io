@@ -24,10 +24,8 @@ a{
   text-decoration: none;
 }
 .img{
-  display: flex;
   background-image: url(v.$logo-image);
-  width: 70%;
-  height: 70%;
+  height: 400px;
   @include v.center;
 }
 .welcome {
@@ -56,61 +54,88 @@ a{
   background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
   background-repeat: repeat;
   left: -1%;
+
+  .container-xxl{
+    height: 80%;
+    .row{
+      height: 100%;
+    }
+  }
+  @media screen and (max-height: 850px){
+    .img{
+      height:290px;
+    }
+  }
 }
 .p2{
   background: conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700);
   .card-text {
-    font-size: 0.9em;
-  }
-  .card{
-    width: 36rem;
-  }
+    font-size: 0.8em;
+    }
     @media screen and (max-height: 2000px) {
-      .card{
-        width: 26rem;
-    }
+      
     .card-text{
-        font-size: 0.6em;
+        font-size: 0.7em;
+      }
     }
-    
-  }
-  .btn-primary{
-    background-color: v.$secondary-color;
-    border-color: v.$secondary-color;
-    color: v.$primary-color;
-  }
-  //.btn-primary:hover{
-    //background-color: v.$secondary-color;
-   // border-color: v.$secondary-color;
-   // color: c.scale(v.$primary-color, $green: 15% ) ;
- // }
- }
-
-.p3{
-  background: conic-gradient(from -90deg at -10% center, #ffa500, #ff7715, #ff522a, #ff3f47, #ff5482, #ff69b4);
-  .btn-primary{
-    background-color: v.$secondary-color;
-    border-color: v.$secondary-color;
-    color: v.$primary-color;
-  }
-  .card{
-    width: 36rem;
-  }
-    @media screen and (max-height: 2000px) {
-      .card{
-        width: 26rem;
-    }
-    .card-text{
-        font-size: 0.6em;
-    }
-  }
+  
   @media screen and (max-height: 950px) {
-    .card{
-      width: 22rem;
-  }
+    
   .card-text{
       font-size: 0.6em;
-   }
+    }
+  }
+
+  .btn-primary{
+    background-color: v.$secondary-color;
+    border-color: v.$secondary-color;
+    color: v.$primary-color;
+    transition: transform 0.3s;
+  }
+  .btn-primary:hover{
+    transform: scale(1.1);
+    background-color: v.$secondary-color;
+    border-color: v.$secondary-color;
+    color: v.$primary-color;
+  }
+  .btn-primary:active{
+    background-color: v.$secondary-color;
+    border-color: v.$secondary-color;
+    color: v.$primary-color;
+  }
+}
+.p3{
+  background: conic-gradient(from -90deg at -10% center, #ffa500, #ff7715, #ff522a, #ff3f47, #ff5482, #ff69b4);
+  
+  .btn-primary{
+    background-color: v.$secondary-color;
+    border-color: v.$secondary-color;
+    color: v.$primary-color;
+    transition: transform 0.3s;
+  }
+  .btn-primary:hover{
+    transform: scale(1.1);
+    background-color: v.$secondary-color;
+    border-color: v.$secondary-color;
+    color: v.$primary-color;
+  }
+  .btn-primary:active{
+    background-color: v.$secondary-color;
+    border-color: v.$secondary-color;
+    color: v.$primary-color;
+  }
+    @media screen and (max-height: 2000px) {
+    .card-text{
+        font-size: 0.7em;
+    }
+  }
+    @media screen and (max-height: 1200px) {
+      .card-text{
+        font-size: 0.6em;
+       }
+      }
+  
+  @media screen and (max-height: 950px) {
    .card-img-top{
      display: none;
    }

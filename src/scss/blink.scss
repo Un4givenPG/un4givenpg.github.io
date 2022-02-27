@@ -53,7 +53,14 @@
     animation: glitch-anim2 5s infinite linear alternate-reverse;
   }
 }
-
+@media screen and (max-height: 850px){
+  .glitch {
+    font-size: 3em;
+  }
+  .glitch-off{
+    font-size: 3em;
+  }
+}
 @-webkit-keyframes glitch-anim {
   $steps: 20;
   @for $i from 0 to $steps {
