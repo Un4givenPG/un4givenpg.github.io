@@ -23,22 +23,17 @@ body {
 ///////////////////////////////////////
 
 
-.btn-primary {
+.a-btn {
     background-color: v.$secondary-color;
     border-color: v.$secondary-color;
     color: v.$primary-color;
     transition: transform 0.3s;
-}
-.btn-primary:hover {
+&:hover, &:active {
     transform: scale(1.05);
     background-color: v.$secondary-color;
     border-color: v.$secondary-color;
     color: v.$primary-color;
-}
-.btn-primary:active {
-    background-color: v.$secondary-color;
-    border-color: v.$secondary-color;
-    color: v.$primary-color;
+  }
 }
 a{
   color: v.$primary-color;
@@ -65,6 +60,7 @@ a{
   background-size: 58px 58px;
   background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
   background-repeat: repeat;
+  
   .container-xxl {
     height: 80%;
       }
@@ -134,7 +130,7 @@ a{
        }
       }
     
-  @media screen and (max-height: 950px) {
+  @media screen and (max-height: 1080px), screen and (max-width:992px) {
    .card-img-top{
      display: none;
    }
@@ -145,7 +141,10 @@ a{
 //p4//
 ///////////////////////////////////////
 .p4{
-  background: conic-gradient(from 90deg at 25% -10%, #ff4500, #d3f340, #7bee85, #afeeee, #7bee85)
+  background: conic-gradient(from 90deg at 25% -10%, #ff4500, #d3f340, #7bee85, #afeeee, #7bee85);
+  .carousel-inner {
+border-radius: 0.25rem;
+  }
 }
 
 ///////////////////////////////////////
