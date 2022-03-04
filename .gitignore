@@ -16,4 +16,5 @@ node_modules
 .parcel-cache
 dev
 
-
+*.mp4
+*.webm
