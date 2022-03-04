@@ -18,6 +18,20 @@
 		transition: all 0.25s 0.25s
 	}
 }
+@media screen and (max-width:576px) {
+  .page{
+    width: 100%;
+	scroll-snap-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	text-align: center;
+  flex-direction: column;
+  }
+}
 .page.p1{
   width: 100vw;
 }

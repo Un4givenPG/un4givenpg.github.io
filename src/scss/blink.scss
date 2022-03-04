@@ -63,6 +63,14 @@
     font-size: 3em;
   }
 }
+@media screen and (max-width:576px) {
+  .glitch {
+    font-size: 2em;
+  }
+  .glitch-off{
+    font-size: 2em;
+  }
+}
 @-webkit-keyframes glitch-anim {
   $steps: 20;
   @for $i from 0 to $steps {

@@ -2,11 +2,8 @@
 .sass-cache/
 *.sass.map
 *.scss.map
-#OLD CSS# 
-oldcss.css
 ### PNG ###
-#*.png
-
+*.png
 # JPEG #
 *.jpg
 *.jpeg
@@ -14,8 +11,9 @@ oldcss.css
 *.jif
 *.jfif
 *.jfi
+#Folders#
 node_modules
 .parcel-cache
 dev
-/Github_recovery
+
 
