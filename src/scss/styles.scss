@@ -82,9 +82,15 @@ a{
 ///////////////////////////////////////
 //p2//
 ///////////////////////////////////////
-.p2 {
+
+.page.p2 {
+  
+  
   background: conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700);
-  .tab {
+  .col-xl{
+    margin-top: 4%;
+  }
+  .tab-2, .mob-2 {
     display: none;
   }
   //p2-media-q
@@ -98,7 +104,7 @@ a{
   .card-text {
       font-size: 0.6em;
     }
-    .tab {
+    .tab-2 {
       display: block;
       height: 90%;
         
@@ -106,44 +112,99 @@ a{
       margin-top: 1rem;
         }
       }
-    .desk {
+    .desk, .mob-2 {
       display: none;
      }
     }
+    @media screen and (max-width: 576px ) {
+      display: block;
+      height: 155vh;
+      .desk, .tab-2 {
+        display: none;
+       }
+       .mob-2 {
+         display: block;
+       }
   }
+}
 
 ///////////////////////////////////////
 //p3//
 ///////////////////////////////////////
 
-.p3 {
+.page.p3 {
+  
   background: conic-gradient(from -90deg at -10% center, #ffa500, #ff7715, #ff522a, #ff3f47, #ff5482, #ff69b4);
+  .mob-3 {
+    display: none;
+  }
+  
   //p3-media-q 
   @media screen and (max-height: 2000px) {
     .card-text{
         font-size: 0.7em;
     
   }
-    @media screen and (max-height: 1200px) {
-      .card-text{
-        font-size: 0.6em;
-       }
-      }
+}
+  @media screen and (max-height: 1200px) {
+    .card-text{
+      font-size: 0.6em;
+     }
+    }
     
   @media screen and (max-height: 1080px), screen and (max-width:992px) {
    .card-img-top{
      display: none;
    }
   } 
+  @media screen and (max-width: 576px ) {
+    height: 200vh;
+    .col-xl{
+      margin-top: 4%;
+    }
+    .desk-3  {
+      display: none;
+     }
+     .mob-3 {
+       display: block;
+     }
+     .carousel:nth-child(1){
+       top:35%;
+     }
+     .carousel-indicators{
+       display: none;
+     }
 }
+
 }
+
 ///////////////////////////////////////
 //p4//
 ///////////////////////////////////////
-.p4{
+.page.p4{
+  .mob-4{
+    display: none;
+  }
   background: conic-gradient(from 90deg at 25% -10%, #ff4500, #d3f340, #7bee85, #afeeee, #7bee85);
   .carousel-inner {
 border-radius: 0.25rem;
+  }
+  @media screen and (max-width: 576px ) {
+    height: 250vh;
+    display: block;
+    .col-xl{
+      margin-top: 4%;
+    }
+    .desk-4  {
+      display: none;
+     }
+     .mob-4 {
+       display: block;
+     }
+     
+     .carousel-indicators{
+       display: none;
+     }
   }
 }
 
@@ -153,5 +214,6 @@ border-radius: 0.25rem;
 
 
 .p5{
+  
   background:conic-gradient(from 270deg at 75% 110%, lawngreen, midnightblue)
 } 

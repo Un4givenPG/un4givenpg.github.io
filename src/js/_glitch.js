@@ -1,6 +1,7 @@
 deglitcher();
 
 function deglitcher() {
+    screen.orientation.lock('portrait')
     const glitch = document.getElementById('bottom-gl');
     const glitch2 = document.getElementById('upper-gl');
     setTimeout(function () {
