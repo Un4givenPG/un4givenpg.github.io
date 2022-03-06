@@ -46,6 +46,8 @@
     position: relative;
     text-align: center;
     flex-direction: column;
+    -ms-scroll-snap-type: none;
+	scroll-snap-type: none;
 }
 }
 .page.p1{
