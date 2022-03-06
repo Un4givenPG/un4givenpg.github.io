@@ -11,6 +11,8 @@
 	position: relative;
 	text-align: center;
   flex-direction: column;
+  -ms-scroll-snap-type: y mandatory;
+	scroll-snap-type: y mandatory;
 	.char {
 		display: inline-block;
 		-webkit-animation-delay: 0.25s;
@@ -55,11 +57,10 @@ body{
   width: 100vw;
 	overflow: auto;
 	overflow-x: hidden;
-	  //  -ms-scroll-snap-type: y mandatory;
-	   //     scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-    padding-left: 0;
-    padding-right: 0;
+	scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  padding-left: 0;
+  padding-right: 0;
   }
 }
 .scroll-down {

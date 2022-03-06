@@ -5,9 +5,13 @@ html {
   margin: 0;
   height: 100%;
   overflow: hidden;
-  //scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+	scroll-snap-type: y mandatory;
 }
 body {
+  -ms-scroll-snap-type: y mandatory;
+	      scroll-snap-type: y mandatory;
   font-family: Roboto, sans-serif;
     color: v.$primary-color;
     background-image: url(v.$background-image);
