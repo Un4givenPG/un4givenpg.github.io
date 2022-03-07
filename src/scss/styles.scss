@@ -6,12 +6,10 @@ html {
   height: 100%;
   overflow: hidden;
   scroll-behavior: smooth;
-  -ms-scroll-snap-type: y mandatory;
-	scroll-snap-type: y mandatory;
+ 
 }
 body {
-  -ms-scroll-snap-type: y mandatory;
-	      scroll-snap-type: y mandatory;
+  
   font-family: Roboto, sans-serif;
     color: v.$primary-color;
     background-image: url(v.$background-image);
@@ -55,7 +53,7 @@ a{
 //p1//
 ///////////////////////////////////////
 
-.p1 {
+.page.p1 {
   background-color: #141114;
   background-image: linear-gradient(335deg, black 23px, transparent 23px),
     linear-gradient(155deg, black 23px, transparent 23px),
@@ -65,6 +63,10 @@ a{
   background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
   background-repeat: repeat;
   
+  @media screen and (max-height: 576px ) and (orientation:landscape) {
+    display: block;
+    height: 575px;
+  }
   .container-xxl {
     height: 80%;
       }
@@ -91,8 +93,8 @@ a{
   
   
   background: conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700);
-  .col-xl{
-    margin-top: 4%;
+  .col{
+    margin-top: 2%;
   }
   .tab-2, .mob-2 {
     display: none;
@@ -106,29 +108,20 @@ a{
   
   @media screen and (max-width: 950px ) {
   .card-text {
-      font-size: 0.6em;
+    font-size: 0.6em;
+    }            
+  .row:nth-child(2) {
+    margin-top: 1rem;
     }
-    .tab-2 {
-      display: block;
-      height: 90%;
-        
-    .row:nth-child(2) {
-      margin-top: 1rem;
-        }
-      }
-    .desk, .mob-2 {
-      display: none;
-     }
-    }
-    @media screen and (max-width: 576px ) {
-      display: block;
-      height: calc(448*3.2px);
-      .desk, .tab-2 {
-        display: none;
-       }
-       .mob-2 {
-         display: block;
-       }
+  }
+
+  @media screen and (max-width: 576px ) and (orientation:portrait) {
+    display: block;
+    height: 1390px;
+  }
+  @media screen and (max-height: 576px ) and (orientation:landscape) {
+    display: block;
+    height: 980px;
   }
 }
 
@@ -161,31 +154,43 @@ a{
      display: none;
    }
   } 
-  @media screen and (max-width: 576px ) {
+  @media screen and (max-width: 576px ) and (orientation:portrait) {
     height: calc(448*4px);
-    .col-xl{
+    .col{
       margin-top: 4%;
-    }
-    .desk-3  {
-      display: none;
-     }
-     .mob-3 {
-       display: block;
-     }
+      } 
+    
+     
      .carousel:nth-child(1){
        top:35%;
-     }
+        }
      .carousel-indicators{
        display: none;
-     }
-}
-
+        }
+    }
+  @media screen and (max-height: 576px ) and (orientation:landscape) {
+    display: block;
+    height: 980px;
+    .col{
+      margin-top: 4%;
+      }
+     .carousel:nth-child(1){
+       top:35%;
+        }
+     .carousel-indicators{
+       display: none;
+        }
+    }
 }
 
 ///////////////////////////////////////
 //p4//
 ///////////////////////////////////////
+
 .page.p4{
+  .col{
+    margin-top: 2%;
+  }
   h1{
     margin-top: 4%;
   }
@@ -194,33 +199,74 @@ a{
   }
   background: conic-gradient(from 90deg at 25% -10%, #ff4500, #d3f340, #7bee85, #afeeee, #7bee85);
   .carousel-inner {
-border-radius: 0.25rem;
+  border-radius: 0.25rem;
   }
-  @media screen and (max-width: 576px ) {
-    height: calc(448*4px);
+  @media screen and (max-width: 576px ) and (orientation:portrait) {
+    height: 1650px;
     display: block;
     .col-xl{
       margin-top: 4%;
     }
-    .desk-4  {
+    .carousel-indicators{
       display: none;
      }
-     .mob-4 {
-       display: block;
-     }
-     
-     .carousel-indicators{
-       display: none;
-     }
   }
+
+
+@media screen and (max-height: 576px ) and (orientation:landscape) {
+  height: 1165px;
+  display: block;
+  .col-xl{
+    margin-top: 4%;
+  }
+  .carousel-indicators{
+    display: none;
+   }
 }
 
+@media screen and (max-height: 1100px ) {
+  .desk-4  {
+    margin-bottom: 5%;
+   }
+  }
+}
 ///////////////////////////////////////
 //p5//
 ///////////////////////////////////////
 
 
-.p5{
-  
-  background:conic-gradient(from 270deg at 75% 110%, lawngreen, midnightblue)
+.page.p5{
+
+  background:conic-gradient(from 270deg at 75% 110%, lawngreen, midnightblue);
+  .col{
+    margin-top: 2%;
+  }
+  @media screen and (max-height: 2000px) {
+    .card-text{
+        font-size: 0.7em;
+    
+  }
+}
+@media screen and (max-width: 576px ) and (orientation:portrait) {
+  height: calc(448*4px);
+  display: block;
+  .col-xl{
+    margin-top: 4%;
+  }
+  .carousel-indicators{
+    display: none;
+   }
+}
+
+
+@media screen and (max-height: 576px ) and (orientation:landscape) {
+height: 1165px;
+display: block;
+.col-xl{
+  margin-top: 4%;
+  }
+.carousel-indicators{
+  display: none;
+ }
+}
 } 

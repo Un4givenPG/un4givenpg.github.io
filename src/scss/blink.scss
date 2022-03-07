@@ -57,13 +57,29 @@
 }
 @media screen and (max-width: 1400px){
   .glitch {
-    font-size: 3em;
+    font-size: 2.6em;
   }
   .glitch-off{
-    font-size: 3em;
+    font-size: 2.6em;
   }
 }
-@media screen and (max-width:576px) {
+@media screen and (max-width: 1200px){
+  .glitch {
+    font-size: 2.5em;
+  }
+  .glitch-off{
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width:576px) and (orientation:portrait) {
+  .glitch {
+    font-size: 2em;
+  }
+  .glitch-off{
+    font-size: 2em;
+  }
+}
+@media screen and (max-height:576px) and (orientation:landscape) {
   .glitch {
     font-size: 2em;
   }

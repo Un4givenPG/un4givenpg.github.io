@@ -48,9 +48,6 @@
    
 }
 }
-.page.p1{
-  width: 100vw;
-}
 body{
   
 .przewijak {
@@ -63,73 +60,60 @@ body{
   padding-left: 0;
   padding-right: 0;
   }
-  @media screen and (max-width:576px) {
+  @media screen and (max-width:576px) and (orientation:portrait) {
+    .przewijak{
+    scroll-snap-type: none;
+    }
+  }
+  @media screen and (max-height:576px) and (orientation:landscape) {
     .przewijak{
     scroll-snap-type: none;
     }
   }
 }
-.scroll-down {
-    height: 50px;
-    width: 30px;
-    border: 2px solid v.$primary-color;
-    position: absolute;
-    left: 49%;
-    bottom: 20px;
-    border-radius: 50px;
-    cursor: pointer;
-  }
-  .scroll-down::before,
-  .scroll-down::after {
-    content: "";
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    height: 10px;
-    width: 10px;
-    transform: translate(-50%, -100%) rotate(45deg);
-    border: 2px solid v.$primary-color;
-    border-top: transparent;
-    border-left: transparent;
-    -webkit-animation: scroll-down 1s ease-in-out infinite;
-            animation: scroll-down 1s ease-in-out infinite;
-  }
-  .scroll-down::before {
-    top: 30%;
-    -webkit-animation-delay: 0.3s;
-            animation-delay: 0.3s;
-    
-  }
-  @-webkit-keyframes scroll-down {
-    0% {
-      
-      opacity: 0;
-    }
-    30% {
-      opacity: 1;
-    }
-    60% {
-      opacity: 1;
-    }
-    100% {
-      top: 90%;
-      opacity: 0;
-    }
-  }
-  @keyframes scroll-down {
-    0% {
-      
-      opacity: 0;
-    }
-    30% {
-      opacity: 1;
-    }
-    60% {
-      opacity: 1;
-    }
-    100% {
-      top: 90%;
-      opacity: 0;
-    }
-  }
-  
+.arrows {
+	width: 60px;
+	height: 72px;
+	left: 50%;
+	bottom: 20px;
+  margin-top: 3%;
+}
+
+.arrows path {
+	stroke: #ffffff;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; 
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; 
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; 
+}
