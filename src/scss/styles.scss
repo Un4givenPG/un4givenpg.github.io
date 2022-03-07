@@ -132,7 +132,7 @@ a{
 .page.p3 {
   
   background: conic-gradient(from -90deg at -10% center, #ffa500, #ff7715, #ff522a, #ff3f47, #ff5482, #ff69b4);
-  .mob-3 {
+  #Kronodrzewko_mb {
     display: none;
   }
   
@@ -156,14 +156,23 @@ a{
   } 
   @media screen and (max-width: 576px ) and (orientation:portrait) {
     height: calc(448*4px);
+    #Kronodrzewko_mb {
+      display: inline-block;
+    }
+    #Kronodrzewko_db {
+      display: none;
+    }
     .col{
       margin-top: 4%;
       } 
     
-     
+     .car-a:nth-child(1){
+        top:0% !important;
+     }
      .carousel:nth-child(1){
        top:35%;
         }
+        
      .carousel-indicators{
        display: none;
         }
@@ -171,16 +180,37 @@ a{
   @media screen and (max-height: 576px ) and (orientation:landscape) {
     display: block;
     height: 980px;
+    #Kronodrzewko_mb {
+      display: inline-block;
+    }
+    #Kronodrzewko_db {
+      display: none;
+    }
     .col{
       margin-top: 4%;
       }
-     .carousel:nth-child(1){
-       top:35%;
-        }
+     
      .carousel-indicators{
        display: none;
         }
     }
+    @media screen and (max-height: 375px ) and (orientation:landscape) {
+      display: block;
+      height: 1020px;
+      #Kronodrzewko_mb {
+        display: inline-block;
+      }
+      #Kronodrzewko_db {
+        display: none;
+      }
+      .col{
+        margin-top: 4%;
+        }
+       
+       .carousel-indicators{
+         display: none;
+          }
+      }
 }
 
 ///////////////////////////////////////
@@ -210,6 +240,7 @@ a{
     .carousel-indicators{
       display: none;
      }
+     
   }
 
 
@@ -222,12 +253,14 @@ a{
   .carousel-indicators{
     display: none;
    }
+   
 }
 
 @media screen and (max-height: 1100px ) {
   .desk-4  {
     margin-bottom: 5%;
    }
+   
   }
 }
 ///////////////////////////////////////
@@ -256,6 +289,9 @@ a{
   .carousel-indicators{
     display: none;
    }
+   .carousel:nth-child(1){
+    top:35%;
+     }
 }
 
 
@@ -268,5 +304,6 @@ display: block;
 .carousel-indicators{
   display: none;
  }
+ 
 }
 } 
