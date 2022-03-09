@@ -296,14 +296,81 @@ a{
 
 
 @media screen and (max-height: 576px ) and (orientation:landscape) {
-height: 1165px;
-display: block;
-.col-xl{
-  margin-top: 4%;
+  height: 1165px;
+  display: block;
+  .col-xl{
+    margin-top: 4%;
+    }
+  .carousel-indicators{
+    display: none;
+    }
   }
-.carousel-indicators{
-  display: none;
- }
- 
-}
 } 
+
+// ! Page 6
+.page.p6{
+  .container-sm{
+    padding-top: 0;
+  }
+  .row:only-child{
+    background-color: white;
+    border-radius: 5px;
+    padding: 2%;
+  }
+  label{
+    font-size: 1rem;
+    padding-left: 4%;
+  }
+  label[for]:not(.ln){
+    padding-left: 2%;
+  }
+  label[for="Topic"]{
+    padding-left: 1%;
+  }
+  textarea{
+    height: 100%;
+  }
+  .row-p{
+    margin-top: 3%;
+  }
+  select{
+    height: calc(4.5rem + 2px);
+  }
+  background:conic-gradient(from .25turn at 0% 0%, #00c476, 10%, #82b0ff, 90%, #00c476);
+  .col{
+    margin-top: 2%;
+  }
+  @media screen and (max-width:1200px) {
+    textarea{
+    padding-left: 2%;
+    }
+    label{
+      padding-left: 6%;
+    }
+    label[for]:not(.ln){
+      padding-left: 6%;
+    }
+    label[for="Topic"]{
+      padding-left: 3%;
+    }
+    .container-sm{
+      padding-top: 0;
+    }
+  }
+  @media screen and (max-height: 2000px) {
+    .card-text{
+        font-size: 0.7em;
+    
+    }
+  }
+@media screen and (max-width: 576px ) and (orientation:portrait) {
+  height: 500px;
+  display: block;
+  } 
+@media screen and (max-height: 576px ) and (orientation:landscape) {
+  height: 1165px;
+  display: block;
+  
+  } 
+
+}
