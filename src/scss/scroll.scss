@@ -60,12 +60,23 @@ body{
   padding-left: 0;
   padding-right: 0;
   }
-  @media screen and (max-width:576px) and (orientation:portrait) {
+
+  @media screen and (max-width:992px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2) {
     .przewijak{
     scroll-snap-type: none;
     }
   }
-  @media screen and (max-height:576px) and (orientation:landscape) {
+  @media screen and (max-height:992px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    .przewijak{
+    scroll-snap-type: none;
+    }
+  }
+  @media screen and (max-width:576px) and (orientation:portrait){
+    .przewijak{
+    scroll-snap-type: none;
+    }
+  }
+  @media screen and (max-height:576px) and (orientation:landscape){
     .przewijak{
     scroll-snap-type: none;
     }
