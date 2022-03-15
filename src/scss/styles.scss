@@ -92,6 +92,7 @@ a{
 
 .page.p2 {
   h1{
+    filter: drop-shadow(6px 6px 3px rgb(0 0 0 /28%)) drop-shadow(-6px -6px 3px rgb(0 0 0 /28%));
     margin-top: 4%;
   }
   height: 100vh;
@@ -149,6 +150,7 @@ a{
   }
   .row:nth-child(1){
     h1{
+      filter: drop-shadow(6px 6px 3px rgb(0 0 0 /28%)) drop-shadow(-6px -6px 3px rgb(0 0 0 /28%));
       color:white;
     }
   }
@@ -187,12 +189,7 @@ a{
     .col{
       margin-top: 2%;
       } 
-      .row:nth-child(1){
-        margin-top: 2%;
-        h1{
-          color:white;
-        }
-      }
+      
       .row:nth-child(3){
         .col:nth-child(3){
           margin-bottom: 2%;
@@ -256,7 +253,9 @@ a{
     margin-top: 2%;
   }
   h1{
+    color:white;
     margin-top: 4%;
+    filter: drop-shadow(6px 6px 3px rgb(0 0 0 /28%)) drop-shadow(-6px -6px 3px rgb(0 0 0 /28%));
   }
   
   .mob-4{
@@ -307,6 +306,7 @@ a{
   height: 100vh;
   .row:nth-child(1){
     h1{
+      filter: drop-shadow(6px 6px 3px rgb(0 0 0 /28%)) drop-shadow(-6px -6px 3px rgb(0 0 0 /28%));
       margin-top: 2%;
       color:white;
     }
