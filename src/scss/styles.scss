@@ -54,6 +54,7 @@ a{
 ///////////////////////////////////////
 
 .page.p1 {
+  height: 100vh;
   background-color: #141114;
   background-image: linear-gradient(335deg, black 23px, transparent 23px),
     linear-gradient(155deg, black 23px, transparent 23px),
@@ -64,8 +65,8 @@ a{
   background-repeat: repeat;
   
   @media screen and (max-height: 576px ) and (orientation:landscape) {
-    display: block;
-    height: 575px;
+    height: unset;
+    
   }
   .container-xxl {
     height: 80%;
@@ -90,7 +91,10 @@ a{
 ///////////////////////////////////////
 
 .page.p2 {
-  
+  h1{
+    margin-top: 4%;
+  }
+  height: 100vh;
   
   background: conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700);
   .col{
@@ -116,12 +120,17 @@ a{
   }
 
   @media screen and (max-width: 576px ) and (orientation:portrait) {
-    display: block;
-    height: 1390px;
+    
+    height: unset;
+    .col:nth-child(3){
+      margin-bottom: 2%;
+    }
   }
   @media screen and (max-height: 576px ) and (orientation:landscape) {
-    display: block;
-    height: 980px;
+    height: unset;
+    .col:nth-child(3){
+      margin-bottom: 2%;
+    }
   }
 }
 
@@ -130,12 +139,22 @@ a{
 ///////////////////////////////////////
 
 .page.p3 {
-  
+  height: 100vh;
+  h1{
+    margin-top: 4%;
+  }
   background: conic-gradient(from -90deg at -10% center, #ffa500, #ff7715, #ff522a, #ff3f47, #ff5482, #ff69b4);
   #Kronodrzewko_mb {
     display: none;
   }
-  
+  .row:nth-child(1){
+    h1{
+      color:white;
+    }
+  }
+  .row{
+    margin: 0 0 2% 0;
+  }
   //p3-media-q 
   @media screen and (max-height: 2000px) {
     .card-text{
@@ -155,7 +174,10 @@ a{
    }
   } 
   @media screen and (max-width: 576px ) and (orientation:portrait) {
-    height: calc(448*4px);
+    .row{
+      margin: 0;
+    }
+    height: unset;
     #Kronodrzewko_mb {
       display: inline-block;
     }
@@ -163,8 +185,19 @@ a{
       display: none;
     }
     .col{
-      margin-top: 4%;
+      margin-top: 2%;
       } 
+      .row:nth-child(1){
+        margin-top: 2%;
+        h1{
+          color:white;
+        }
+      }
+      .row:nth-child(3){
+        .col:nth-child(3){
+          margin-bottom: 2%;
+        }
+      }
     
      .car-a:nth-child(1){
         top:0% !important;
@@ -218,12 +251,14 @@ a{
 ///////////////////////////////////////
 
 .page.p4{
+  height: 100vh;
   .col{
     margin-top: 2%;
   }
   h1{
     margin-top: 4%;
   }
+  
   .mob-4{
     display: none;
   }
@@ -232,35 +267,35 @@ a{
   border-radius: 0.25rem;
   }
   @media screen and (max-width: 576px ) and (orientation:portrait) {
-    height: 1650px;
-    display: block;
+    height: unset;
     .col-xl{
       margin-top: 4%;
     }
     .carousel-indicators{
       display: none;
      }
+     .row:nth-child(2){
+       .col:nth-child(3){
+         margin-bottom: 2%;
+       }
+     }
      
   }
 
 
 @media screen and (max-height: 576px ) and (orientation:landscape) {
-  height: 1165px;
-  display: block;
-  .col-xl{
-    margin-top: 4%;
-  }
-  .carousel-indicators{
-    display: none;
-   }
-   
-}
-
-@media screen and (max-height: 1100px ) {
-  .desk-4  {
-    margin-bottom: 5%;
-   }
-   
+  height: unset;
+    .col-xl{
+      margin-top: 4%;
+    }
+    .carousel-indicators{
+      display: none;
+     }
+     .row:nth-child(2){
+       .col:nth-child(3){
+         margin-bottom: 2%;
+       }
+    }
   }
 }
 ///////////////////////////////////////
@@ -269,7 +304,13 @@ a{
 
 
 .page.p5{
-
+  height: 100vh;
+  .row:nth-child(1){
+    h1{
+      margin-top: 2%;
+      color:white;
+    }
+  }
   background:conic-gradient(from 270deg at 75% 110%, lawngreen, midnightblue);
   .col{
     margin-top: 2%;
@@ -281,8 +322,7 @@ a{
   }
 }
 @media screen and (max-width: 576px ) and (orientation:portrait) {
-  height: calc(448*4px);
-  display: block;
+  height: unset;
   .col-xl{
     margin-top: 4%;
   }
@@ -292,25 +332,39 @@ a{
    .carousel:nth-child(1){
     top:35%;
      }
+  .row:nth-child(2){
+    .col:nth-child(3){
+      margin-bottom: 2%;
+    }
+  }
 }
 
 
 @media screen and (max-height: 576px ) and (orientation:landscape) {
-  height: 1165px;
-  display: block;
+  height: unset;
   .col-xl{
     margin-top: 4%;
-    }
+  }
   .carousel-indicators{
     display: none;
+   }
+   .carousel:nth-child(1){
+    top:35%;
+     }
+  .row:nth-child(2){
+    .col:nth-child(3){
+      margin-bottom: 2%;
     }
   }
 } 
+}
 
 // ! Page 6
 .page.p6{
+  height: 100vh;
   .container-sm{
     padding-top: 0;
+    margin: 2% 0 2% 0;
   }
   .row:only-child{
     background-color: white;
@@ -353,9 +407,6 @@ a{
     label[for="Topic"]{
       padding-left: 3%;
     }
-    .container-sm{
-      padding-top: 10%;
-    }
   }
   @media screen and (max-height: 2000px) {
     .card-text{
@@ -364,12 +415,12 @@ a{
     }
   }
 @media screen and (max-width: 576px ) and (orientation:portrait) {
-  height: 500px;
-  display: block;
+  height: unset;
+  
   } 
 @media screen and (max-height: 576px ) and (orientation:landscape) {
-  height: 500px;
-  display: block;
+  height: unset;
+  
   
   } 
 
