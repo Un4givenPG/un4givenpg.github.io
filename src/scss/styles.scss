@@ -192,7 +192,7 @@ a{
       
       .row:nth-child(3){
         .col:nth-child(3){
-          margin-bottom: 2%;
+          margin: 0 0 2% 0;
         }
       }
     
@@ -209,7 +209,7 @@ a{
     }
   @media screen and (max-height: 576px ) and (orientation:landscape) {
     display: block;
-    height: 980px;
+    height: unset;
     #Kronodrzewko_mb {
       display: inline-block;
     }
@@ -223,24 +223,13 @@ a{
      .carousel-indicators{
        display: none;
         }
-    }
-    @media screen and (max-height: 375px ) and (orientation:landscape) {
-      display: block;
-      height: 1020px;
-      #Kronodrzewko_mb {
-        display: inline-block;
-      }
-      #Kronodrzewko_db {
-        display: none;
-      }
-      .col{
-        margin-top: 4%;
-        }
-       
-       .carousel-indicators{
-         display: none;
+        .row:nth-child(3){
+          margin: 0;
+          .col{
+            margin: 0 0 2% 0;
           }
-      }
+    }
+  }
 }
 
 ///////////////////////////////////////
@@ -359,7 +348,7 @@ a{
 } 
 }
 
-// ! Page 6
+//Page 6
 .page.p6{
   height: 100vh;
   .container-sm{
@@ -416,7 +405,10 @@ a{
   }
 @media screen and (max-width: 576px ) and (orientation:portrait) {
   height: unset;
-  
+  .container-sm{
+    padding-top: 0;
+    margin: 2% 0 10% 0;
+  }
   } 
 @media screen and (max-height: 576px ) and (orientation:landscape) {
   height: unset;
