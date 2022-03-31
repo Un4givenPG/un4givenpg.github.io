@@ -192,7 +192,7 @@ a{
       
       .row:nth-child(3){
         .col:nth-child(3){
-          margin: 0 0 2% 0;
+          margin: 2% 0 2% 0;
         }
       }
     
@@ -254,7 +254,7 @@ a{
   .carousel-inner {
   border-radius: 0.25rem;
   }
-  @media screen and (max-width: 576px ) and (orientation:portrait) {
+  @media screen and (max-width: 576px ) and (orientation:portrait), screen and (orientation:portrait) {
     height: unset;
     .col-xl{
       margin-top: 4%;
@@ -310,7 +310,7 @@ a{
     
   }
 }
-@media screen and (max-width: 576px ) and (orientation:portrait) {
+@media screen and (max-width: 576px ) and (orientation:portrait), screen and (orientation:portrait) {
   height: unset;
   .col-xl{
     margin-top: 4%;
