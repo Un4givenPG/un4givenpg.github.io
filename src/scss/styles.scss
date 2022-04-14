@@ -19,6 +19,10 @@ body {
     height: 100%;
     margin: 0;
     @include v.center;
+    .btn-danger{
+      background-color: v.$secondary-color;
+      border-color: v.$secondary-color;
+    }
   }
 ///////////////////////////////////////
 //building-blocks//
@@ -97,7 +101,7 @@ a{
   }
   height: 100vh;
   
-  background: conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700);
+  background: conic-gradient(from 90deg at 40% -25%, color(display-p3 0.9886 0.8465 0), color(display-p3 0.9706 0.6035 0), color(display-p3 0.9675 0.3459 0), color(display-p3 0.9315 0 0.0492), color(display-p3 0.8456 0 0.1003), color(display-p3 0.8182 0 0.2194), color(display-p3 0.7928 0 0.3747), color(display-p3 0.7624 0 0.5261), color(display-p3 0.7928 0 0.3747), color(display-p3 0.8182 0 0.2194), color(display-p3 0.8456 0 0.1003), color(display-p3 0.9675 0.3459 0), color(display-p3 0.9706 0.6035 0), color(display-p3 0.9886 0.8465 0), color(display-p3 0.9886 0.8465 0), color(display-p3 0.9886 0.8465 0));
   .col{
     margin-top: 2%;
   }
@@ -144,7 +148,7 @@ a{
   h1{
     margin-top: 4%;
   }
-  background: conic-gradient(from -90deg at -10% center, #ffa500, #ff7715, #ff522a, #ff3f47, #ff5482, #ff69b4);
+  background: conic-gradient(from -90deg at -10% center, color(display-p3 0.9999 0.6364 0), color(display-p3 1 0.4414 0.0987), color(display-p3 1 0.2723 0.1593), color(display-p3 1 0.1708 0.2587), color(display-p3 1 0.2805 0.4978), color(display-p3 1 0.3722 0.714));
   #Kronodrzewko_mb {
     display: none;
   }
@@ -250,7 +254,7 @@ a{
   .mob-4{
     display: none;
   }
-  background: conic-gradient(from 90deg at 25% -10%, #ff4500, #d3f340, #7bee85, #afeeee, #7bee85);
+  background: conic-gradient(from 90deg at 25% -10%, color(display-p3 1 0.2026 0.0801), color(display-p3 0.7972 0.9701 0), color(display-p3 0 0.9826 0.3329), color(display-p3 0.4086 0.9793 1), color(display-p3 0.0214 0.9839 0.2586));
   .carousel-inner {
   border-radius: 0.25rem;
   }
@@ -300,7 +304,7 @@ a{
       color:white;
     }
   }
-  background:conic-gradient(from 270deg at 75% 110%, lawngreen, midnightblue);
+  background:conic-gradient(from 270deg at 75% 110%, color(display-p3 0.5077 0.9906 0.0202), color(display-p3 0.0078 0.086 0.5148));
   .col{
     margin-top: 2%;
   }
@@ -379,7 +383,7 @@ a{
   select{
     height: calc(4.5rem + 2px);
   }
-  background:conic-gradient(from .25turn at 0% 0%, #00c476, 10%, #82b0ff, 90%, #00c476);
+  background:conic-gradient(from .25turn at 0% 0%, color(display-p3 0.0117 0.7817 0.4177), 10%, color(display-p3 0.5338 0.6855 0.9961), 90%, color(display-p3 0 0.7819 0.417));
   .col{
     margin-top: 2%;
   }
