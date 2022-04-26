@@ -4,13 +4,14 @@
 //font var
 
 //color-vars
-$primary-color: rgb(255, 255, 255);
-$secondary-color: #dd0e15;
+$primary-color: rgb(255, 255, 255); 
+$secondary-color: color(display-p3 0.8426 0 0.1145);
 $active-color: yellow;
 $bg-color: black;
 //image-vars
 $logo-image: "../img/logo.webp";
 $background-image: "../img/bg.webp";
+
 //mixins
 @mixin center {
     background-position: center;
